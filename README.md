@@ -71,6 +71,7 @@ When a player wins, the game returns to `waiting-for-players`, and the `state.wi
 
 Commands sent to the server look like this:
 
+
     {
         command: "",        // The name of the command: play-action, block, challenge, allow, reveal, exchange
         action: "",         // For the play-action command, the action to play
@@ -80,3 +81,6 @@ Commands sent to the server look like this:
         roles: [""],        // For the exchange command, the role(s) you wish to keep
         stateId: 1          // Must match the stateId from the latest game state
     }
+
+
+Jcruzdev edit: This fork will essentially be a derivative of the socket.io functionality only. The first step in understanding the multiplayer components of the game. 
